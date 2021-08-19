@@ -32,7 +32,14 @@ function InvoiceItem({ invoice }) {
           {formatter.format(invoice.salesTotal)}
         </SytledInvoiceField>
       </td>
-      <td className={styles.td}>lorem</td>
+      <td className={styles.td}>
+        <div className={styles.amount_pm}>
+          <SytledInvoiceField>{invoice.date}</SytledInvoiceField>
+          <SytledInvoiceField color="#231F20" fw="700" className="payment_m">
+            {invoice.paymentMethod}
+          </SytledInvoiceField>
+        </div>
+      </td>
       <td className={styles.td}>
         <SytledInvoiceStatus status={invoice.status}>
           {invoice.status}

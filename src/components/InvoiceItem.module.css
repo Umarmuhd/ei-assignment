@@ -26,3 +26,12 @@
   flex-direction: column;
   font-weight: 300;
 }
+
+.amount_pm {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+.amount_pm .payment_m {
+  letter-spacing: 0.025em;
+}
