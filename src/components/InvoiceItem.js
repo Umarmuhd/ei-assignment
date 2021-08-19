@@ -10,23 +10,27 @@ function InvoiceItem({ invoice }) {
         <input type="checkbox" name="" id="" />
       </th>
       <td className={styles.td}>
-        <SytledInvoiceField color="#0061d3">{invoice.id}</SytledInvoiceField>
+        <SytledInvoiceField color="#0061d3" fw="500">
+          {invoice.id}
+        </SytledInvoiceField>
       </td>
       <td className={styles.td}>
-        <div className="datentime">
-          <span className="date">{invoice.date}</span>
-          <span className="time">{invoice.time}</span>
+        <div className={styles.datentime}>
+          <SytledInvoiceField>{invoice.date}</SytledInvoiceField>
+          <SytledInvoiceField color="#BCBCBC">
+            {invoice.time}
+          </SytledInvoiceField>
         </div>
       </td>
       <td className={styles.td}>
-        <SytledInvoiceField color="#0061d3">
+        <SytledInvoiceField color="#0061d3" fw="400">
           {invoice.customer}
         </SytledInvoiceField>
       </td>
       <td className={styles.td}>
-        <span className={styles.sales_total}>
+        <SytledInvoiceField>
           {formatter.format(invoice.salesTotal)}
-        </span>
+        </SytledInvoiceField>
       </td>
       <td className={styles.td}>lorem</td>
       <td className={styles.td}>

@@ -21,14 +21,8 @@
   border: none;
 }
 
-.customer {
-  font-size: 0.75rem;
-  line-height: 1.5;
-  color: #0061d3;
-}
-
-.sales_total {
-  color: #231f20;
-  font-size: 0.75rem;
-  line-height: 1.5;
+.datentime {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
 }

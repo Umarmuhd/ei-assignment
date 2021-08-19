@@ -256,6 +256,7 @@ export const SytledDashboardWrap = styled.div`
 
 export const SytledInvoiceField = styled.span`
   color: ${(props) => props.color || "#231f20"};
+  font-weight: ${(props) => props.fw || "300"};
   font-size: 0.75rem;
   line-height: 1.5;
 `;
@@ -266,4 +267,5 @@ export const SytledInvoiceStatus = styled.span`
   line-height: 1.5;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  font-weight: 700;
 `;
