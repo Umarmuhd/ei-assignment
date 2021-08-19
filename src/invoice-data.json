@@ -1,0 +1,54 @@
+{
+  "invoicesData": [
+    {
+      "id": 1,
+      "customer": "Gibson B",
+      "date": "Jun 04 2021",
+      "salesTotal": 250000,
+      "amount": 250000,
+      "paymentMethod": "Cash",
+      "status": "COMPLETED",
+      "time": "12:30 PM"
+    },
+    {
+      "id": 2,
+      "customer": "Brad Lee",
+      "date": "Jul 01 2021",
+      "salesTotal": 50000,
+      "amount": 50000,
+      "paymentMethod": "Debit card",
+      "status": "COMPLETED",
+      "time": "12:30 PM"
+    },
+    {
+      "id": 3,
+      "customer": "Caveman A",
+      "date": "Aug 21 2021",
+      "salesTotal": 350000,
+      "amount": 350000,
+      "paymentMethod": "Cash",
+      "status": "PENDING",
+      "time": "12:30 PM"
+    },
+    {
+      "id": 4,
+      "customer": "Jenifer L",
+      "date": "Feb 19 2021",
+      "salesTotal": 150000,
+      "amount": 150000,
+      "paymentMethod": "Debit card",
+      "status": "COMPLETED",
+      "time": "12:30 PM"
+    },
+    {
+      "id": 5,
+      "customer": "Arlene P",
+      "date": "Jan 11 2021",
+      "salesTotal": 450000,
+      "amount": 450000,
+      "paymentMethod": "Cash",
+      "status": "COMPLETED",
+      "time": "12:30 PM"
+    }
+  ]
+}
