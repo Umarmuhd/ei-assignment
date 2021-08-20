@@ -5,11 +5,20 @@
   box-shadow: 2px 2px 6px rgba(202, 150, 229, 0.3);
   border-radius: 25px;
   padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.create_invoice_btn span {
+  margin-left: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .right_controls {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .right_controls .reload_btn {

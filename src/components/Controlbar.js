@@ -1,11 +1,28 @@
 import React from "react";
 import { StyledControlbar } from "styles/Styles";
 import styles from "./Controlbar.module.css";
+import SelectFilter from "./SelectFilter";
 
 function Controlbar() {
   return (
     <StyledControlbar>
-      <button className={styles.create_invoice_btn}>Create Invoice</button>
+      <button className={styles.create_invoice_btn}>
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="14" cy="14" r="13" stroke="#A751D4" stroke-width="2" />
+          <path
+            d="M18.6013 14.74H14.5613V18.88H12.4413V14.74H8.40133V12.82H12.4413V8.68H14.5613V12.82H18.6013V14.74Z"
+            fill="#A751D4"
+          />
+        </svg>
+
+        <span>Create Invoice</span>
+      </button>
       <div className={styles.right_controls}>
         <button className={styles.reload_btn}>
           <svg
@@ -21,20 +38,7 @@ function Controlbar() {
             />
           </svg>
         </button>
-        <div class="input-field">
-          <div class="input-select">
-            <select data-trigger="" name="choices-single-defaul">
-              <option placeholder="" value="">
-                Time
-              </option>
-              <option>Last time</option>
-              <option>Today</option>
-              <option>This week</option>
-              <option>This month</option>
-              <option>This year</option>
-            </select>
-          </div>
-        </div>
+        <SelectFilter />
       </div>
     </StyledControlbar>
   );

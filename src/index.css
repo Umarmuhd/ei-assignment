@@ -33,8 +33,17 @@ code {
   padding-bottom: 8rem;
 }
 
+.css-yk16xz-control {
+  border: none !important;
+  border-radius: 25px !important;
+  min-width: 3em !important;
+}
+.css-1pahdxg-control {
+  border-radius: 25px !important;
+}
+
 .dashboard-container {
-  margin: -6.8rem auto;
+  margin: -6.8rem auto 0;
 }
 
 .dashboard-container .wrapper {

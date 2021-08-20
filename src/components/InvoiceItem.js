@@ -34,7 +34,9 @@ function InvoiceItem({ invoice }) {
       </td>
       <td className={styles.td}>
         <div className={styles.amount_pm}>
-          <SytledInvoiceField>{invoice.date}</SytledInvoiceField>
+          <SytledInvoiceField>
+            {formatter.format(invoice.amount)}
+          </SytledInvoiceField>
           <SytledInvoiceField color="#231F20" fw="700" className="payment_m">
             {invoice.paymentMethod}
           </SytledInvoiceField>
