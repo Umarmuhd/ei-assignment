@@ -15,7 +15,7 @@ const formatGroupLabel = (data) => (
   </div>
 );
 
-export default () => (
+const SelectFilter = () => (
   <Select
     defaultValue={options[1]}
     options={options}
@@ -23,3 +23,5 @@ export default () => (
     className={styles.select_class}
   />
 );
+
+export default SelectFilter;
