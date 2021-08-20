@@ -9,6 +9,7 @@ import InvoiceItem from "components/InvoiceItem";
 import { SytledDashboardWrap } from "styles/Styles";
 
 import { invoicesData } from "invoice-data.json";
+import Controlbar from "components/Controlbar";
 
 function Dashboard() {
   let history = useHistory();
@@ -30,6 +31,11 @@ function Dashboard() {
       <Sidebar />
       <SytledDashboardWrap className="dashboard">
         <Navbar />
+
+        <div className="wrap_control_bar">
+          <Controlbar />
+        </div>
+
         <div className="dashboard-container">
           <div className="wrapper">
             <div className="invoice-table">
@@ -50,7 +56,11 @@ function Dashboard() {
                 </thead>
                 <tbody className="table-body">
                   {invoices.map((invoice) => (
-                    <InvoiceItem key={invoice.id} invoice={invoice} />
+                    <InvoiceItem
+                      key={invoice.id}
+                      invoice={invoice}
+                      className="invoices"
+                    />
                   ))}
                 </tbody>
               </table>

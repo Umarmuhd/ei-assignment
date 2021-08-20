@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -19,22 +22,31 @@ code {
 
 /* Dashboard Styles */
 .dashboard {
-  /* overflow-x: hidden; */
+  height: 100vh;
 }
+
+.wrap_control_bar {
+  padding-top: 3rem;
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 8rem;
+}
+
 .dashboard-container {
-  padding-top: 2.5rem;
+  margin: -6.8rem auto;
 }
 
 .dashboard-container .wrapper {
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
   margin-bottom: 3rem;
   min-width: 0;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow-wrap: break-word;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .dashboard .invoice-table {
@@ -68,8 +80,11 @@ code {
 }
 
 @media (min-width: 767.98px) {
+  .wrap_control_bar {
+    padding-top: 6.5rem;
+  }
   .dashboard-container {
-    padding-top: 5rem;
+    padding: 0 1rem;
   }
 }
 

@@ -35,11 +35,11 @@ function Sidebar() {
           </StyledToggler>
 
           {/* Brand  */}
-          <Link to="#helloworld">
-            <StyledBrand>
+          <StyledBrand>
+            <Link to="#helloworld">
               <img src={Logo} alt="..." />
-            </StyledBrand>
-          </Link>
+            </Link>
+          </StyledBrand>
 
           {/* User    */}
           <ul className={styles.mobile_navs}>
@@ -83,82 +83,84 @@ function Sidebar() {
                 </div>
               </div>
             </div>
+            {/* Mobile search */}
+            <form className={styles.mobile_search_form}>
+              <div>
+                <input type="text" placeholder="Search" />
+              </div>
+            </form>
+            <StyledSideNavItems>
+              <li className={styles.sidebar_nav_item}>
+                <Link to="/dashboard">
+                  <img
+                    alt="..."
+                    src={require("assets/icons/home.svg").default}
+                  />
+                  Home
+                </Link>
+              </li>
+
+              <li className={styles.sidebar_nav_item}>
+                <Link to="/dashboard">
+                  <img
+                    alt="..."
+                    src={require("assets/icons/sales.svg").default}
+                  />
+                  Sales
+                </Link>
+              </li>
+
+              <li className={styles.sidebar_nav_item}>
+                <Link to="/dashboard">
+                  <img
+                    alt="..."
+                    src={require("assets/icons/product.svg").default}
+                  />
+                  Products
+                </Link>
+              </li>
+
+              <li className={styles.sidebar_nav_item}>
+                <Link to="/dashboard">
+                  <img
+                    alt="..."
+                    src={require("assets/icons/customer.svg").default}
+                  />
+                  Customer
+                </Link>
+              </li>
+
+              <li className={styles.sidebar_nav_item}>
+                <Link to="/dashboard">
+                  <img
+                    alt="..."
+                    src={require("assets/icons/supplier.svg").default}
+                  />
+                  Supplier
+                </Link>
+              </li>
+
+              <li className={styles.sidebar_nav_item}>
+                <Link to="/dashboard">
+                  <img
+                    alt="..."
+                    src={require("assets/icons/financials.svg").default}
+                  />
+                  Financial
+                </Link>
+              </li>
+
+              <li className={styles.sidebar_nav_item}>
+                <Link to="/dashboard">
+                  <img
+                    alt="..."
+                    src={require("assets/icons/report.svg").default}
+                  />
+                  Report
+                </Link>
+              </li>
+            </StyledSideNavItems>
           </StyledCollapsed>
-          {/* Mobile search */}
-          <form className={styles.mobile_search_form}>
-            <div>
-              <input type="text" placeholder="Search" />
-            </div>
-          </form>
-
-          <StyledSideNavItems>
-            <li className={styles.sidebar_nav_item}>
-              <Link to="/dashboard">
-                <img alt="..." src={require("assets/icons/home.svg").default} />
-                Home
-              </Link>
-            </li>
-
-            <li className={styles.sidebar_nav_item}>
-              <Link to="/dashboard">
-                <img
-                  alt="..."
-                  src={require("assets/icons/sales.svg").default}
-                />
-                Sales
-              </Link>
-            </li>
-
-            <li className={styles.sidebar_nav_item}>
-              <Link to="/dashboard">
-                <img
-                  alt="..."
-                  src={require("assets/icons/product.svg").default}
-                />
-                Products
-              </Link>
-            </li>
-
-            <li className={styles.sidebar_nav_item}>
-              <Link to="/dashboard">
-                <img
-                  alt="..."
-                  src={require("assets/icons/customer.svg").default}
-                />
-                Customer
-              </Link>
-            </li>
-
-            <li className={styles.sidebar_nav_item}>
-              <Link to="/dashboard">
-                <img
-                  alt="..."
-                  src={require("assets/icons/supplier.svg").default}
-                />
-                Supplier
-              </Link>
-            </li>
-
-            <li className={styles.sidebar_nav_item}>
-              <Link to="/dashboard">
-                <img
-                  alt="..."
-                  src={require("assets/icons/financials.svg").default}
-                />
-                Financial
-              </Link>
-            </li>
-
-            <li className={styles.sidebar_nav_item}>
-              <Link to="/dashboard">
-                <img
-                  alt="..."
-                  src={require("assets/icons/report.svg").default}
-                />
-                Report
-              </Link>
-            </li>
-          </StyledSideNavItems>
         </StyledSideNavContainer>
       </StyledSideNavWrap>
     </>

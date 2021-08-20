@@ -11,10 +11,10 @@ export const StyledSideNavWrap = styled.nav`
   justify-content: space-between;
   position: relative;
   z-index: 10;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 
   @media (min-width: 768px) {
     top: 0;
@@ -36,7 +36,7 @@ export const StyledSideNavContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
+  justify-content: space-between;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -94,7 +94,7 @@ export const StyledCollapsed = styled.div`
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 
   @media (min-width: 768px) {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     opacity: 1;
@@ -108,7 +108,12 @@ export const StyledSideNavItems = styled.ul`
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  list-style-type: none @media (min-width: 768px) {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
     flex-direction: column;
     min-width: 100%;
   }
@@ -146,8 +151,8 @@ export const SytledNavbarContainer = styled.div`
 
   @media (min-width: 768px) {
     flex-wrap: nowrap;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 `;
 
@@ -159,11 +164,10 @@ export const StyledInputForm = styled.form`
 
   @media (min-width: 768px) {
     display: flex;
-    margin-right: auto;
   }
 
   @media (min-width: 1080px) {
-    margin-right: auto;
+    display: inline-block;
   }
 `;
 
@@ -219,6 +223,12 @@ export const StyledNavbarItems = styled.ul`
   @media (min-width: 768px) {
     flex-direction: row;
     display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1025px) {
+    margin-left: auto;
   }
 `;
 
@@ -251,6 +261,15 @@ export const SytledDashboardWrap = styled.div`
 
   @media (min-width: 768px) {
     margin-left: 8.687rem;
+  }
+`;
+
+export const StyledControlbar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+
+  @media (min-width: 768px) {
   }
 `;
 
